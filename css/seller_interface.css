@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9; /* Light background color */
+    color: #333; /* Darker text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0056b3; /* Deep blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Increased height for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #003d79; /* Slightly darker blue */
+    color: #dcdcdc; /* Light gray for contrast */
+}
+
+nav a.active {
+    background-color: #002d62; /* Even darker blue */
+    color: #ffffff;
+}
+
+/* Button Styles */
+.button-33 {
+    background-color: #0099ff; /* Bright blue */
+    border-radius: 50px; /* Circular button */
+    box-shadow: rgba(0, 153, 255, .2) 0 -15px 12px -10px inset, rgba(0, 153, 255, .15) 0 1px 2px, rgba(0, 153, 255, .15) 0 2px 4px, rgba(0, 153, 255, .15) 0 4px 8px, rgba(0, 153, 255, .15) 0 8px 16px, rgba(0, 153, 255, .15) 0 16px 32px;
+    color: #ffffff;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 25px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    user-select: none;
+}
+
+.button-33:hover {
+    box-shadow: rgba(0, 153, 255, .35) 0 -15px 12px -10px inset, rgba(0, 153, 255, .25) 0 1px 2px, rgba(0, 153, 255, .25) 0 2px 4px, rgba(0, 153, 255, .25) 0 4px 8px, rgba(0, 153, 255, .25) 0 8px 16px, rgba(0, 153, 255, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:30px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+th {
+    background-color: #0056b3; /* Deep blue */
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    max-width:200px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1; /* Light gray */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly lighter gray */
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Light border color */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px dotted #ccc;
+        position: relative;
+        padding: 10px;
+    }
+    .Description {
+    width: 360px; /* Fixed width */
+    white-space: normal; /* Allows text to wrap */
+    word-wrap: break-word; /* Ensures long words break properly */
+    }
+
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #0056b3; /* Deep blue for labels */
+    }
+}
+
+/* Image and Icon Styles */
+#pci {
+    width: auto;
+    height: 120px; /* Adjusted for better proportion */
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#pci:hover {
+    transform: scale(1.05);
+}
+
+#icon {
+    width: auto;
+    height: 2em;
+    margin-left: 1em; /* Adjusted margin */
+}

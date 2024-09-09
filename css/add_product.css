@@ -1,0 +1,129 @@
+body, nav, a {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    margin-bottom:20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    color: #FFD700;
+}
+
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+main{
+    margin:0,auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50; /* Darker blue-gray */
+}
+
+/* Form Inputs and Textarea */
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Light background */
+    transition: border-color 0.3s;
+}
+
+/* Textarea Specific Styles */
+form textarea {
+    height: 100px; /* Set a height for better usability */
+    resize: vertical; /* Allow users to resize vertically */
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="file"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #3498db; /* Soft blue */
+    outline: none;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color: #3498db; /* Soft blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
